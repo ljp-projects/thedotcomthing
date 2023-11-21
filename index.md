@@ -6,4 +6,4 @@ The Dotcom Thing is a chrome extension that injects code into any website ending
 
 **This will only work if you use chrome**
 
-You will need to download the source code [here](https://github.com/ljp-projects/thedotcomthing) and go to [this website](chrome://extensions). Then toggle 'Developer mode' to on. Then press 'Load Unpacked'. Locate the source code for the extension. And then voila! It has been installed.
+You will need to download the source code [here](https://github.com/ljp-projects/thedotcomthing) and go to 'chrome://extensions'. Then toggle 'Developer mode' to on. Then press 'Load Unpacked'. Locate the source code for the extension. And then voila! It has been installed.
