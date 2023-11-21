@@ -41,7 +41,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         chrome.scripting.executeScript({
             target: { tabId: tabId },
             function: () => {
-                document.querySelector("body").innerHTML += "<div class='dotcom-virus-centre'><h1 class='dotcom-virus-heading'>YOU HAVE THE DOTCOM VIRUS</h1></div>"
+                document.querySelector("body").innerHTML += "<div class='dotcom-virus-centre'><h1 class='dotcom-virus-heading'>The Dotcom Thing :D</h1></div>"
                 document.querySelectorAll("body *").forEach(element => {
                     element.setAttribute("href", "")
                     element.setAttribute("onsubmit", "")

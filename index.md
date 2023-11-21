@@ -2,7 +2,7 @@
 
 The Dotcom Thing is a chrome extension that injects code into any website ending in .com, which may or may not make the website unusable.
 
-## How do I install it; it isn't on the chrome webstore?
+## How do I install it if it isn't on the chrome webstore?
 
 **This will only work if you use chrome**
 
