@@ -11,11 +11,11 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     
             @keyframes spin-other {
                 from {
-                    transform: rotate(360deg) scale(0.75);
+                    transform: rotate(360deg) scale(0.95);
                 }
                 
                 to {
-                    transform: rotate(0deg) scale(0.75);
+                    transform: rotate(0deg) scale(0.95);
                 }
             }
     
