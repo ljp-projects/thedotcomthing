@@ -1,4 +1,5 @@
-chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+"use strict";
+/* chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (changeInfo.status == 'complete') {
 
         chrome.scripting.insertCSS({
@@ -41,7 +42,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         chrome.scripting.executeScript({
             target: { tabId: tabId },
             function: () => {
-                document.querySelector("body").innerHTML += "<div class='dotcom-virus-centre'><h1 class='dotcom-virus-heading'>The Dotcom Thing :D</h1></div>"
+                const body: Element | null = document.querySelector("body")
+
+                body != null ? body.innerHTML += "<div class='dotcom-virus-centre'><h1 class='dotcom-virus-heading'>The Dotcom Thing :D</h1></div>" : undefined
                 document.querySelectorAll("body *").forEach(element => {
                     element.setAttribute("href", "")
                     element.setAttribute("onsubmit", "")
@@ -54,8 +57,10 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     }
 })
 
-/*
 body {
     animation: spin 10s linear infinite;
 }
 */
+chrome.tabs.onUpdated.addListener((tabID, changeInfo, tab) => {
+    console.log(document.body.innerHTML);
+});
